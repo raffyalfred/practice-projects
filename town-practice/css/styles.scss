@@ -1,92 +1,96 @@
-$background-color: #fff;
+// TYPOGRAPHY
 
-body {
-    background-color: $background-color;
-}
-
-// nav styles
-
-
-.menu ul li a {
-    position: relative;
-    transition: all 0.4s ease;
-    padding: 15px;
-}
-
-.menu ul li a:hover {
-    color: antiquewhite
-}
-
-.menu ul li a:after {
-    content: "";
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #fff;
     position: absolute;
-    height: 2px;
-    background-color: antiquewhite;
-    width: 0;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) all;
+    top: 90%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5rem;
 }
 
-.menu ul li a:hover:after {
-    width: 100%;
+// NAV
+.nav-container {
+    background-color: #203e47;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: 0.25s;
 }
 
-// mobile nav
-
-.menu-bar {
+.menu-icon {
     width: 2rem;
 }
 
-// .logo {
-//     margin: 1rem 0 0 1rem;
-// }
-
-.menu ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav {
-
-    &__inner {
-        background-color: #203e47;
-    }
-}
-
-.mobile-nav {
+.mobile-view {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem;
     align-items: center;
 }
 
+.dropdown-menu {
+    background-color: #203e47;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu ul li {
+    padding-top: 1rem;
+}
+
+// HOME BANNER
+
+.home {
+    position: relative;
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 70.84%);
+        height: 50vh;
+    }
 
 
-// media query
+}
 
-@media only screen and (min-width: 440px) {
-    .nav {
+.home img {
+    height: 50vh;
+    min-height: 45vh;
+    width: 100%;
+}
 
-        &__inner {
+
+
+//////// MEDIA QUERY /////////
+
+@media only screen and (min-width: 460px){
+
+    .menu-icon {
+        display: none;
+    }
+
+    .dropdown-menu ul li {
+        padding-top: 0;
+    }
+
+    .dropdown-menu {
+
+        display: flex;
+        width: 500px;
+
+        &__list{
             display: flex;
+            width: 100%;
             justify-content: space-between;
         }
-    }
-    
-
-    .menu ul {
-        display: flex;
-        list-style: none;
-    }
-    
-    .menu ul li {
-        padding: 0 1.25rem;
-        align-items: center;
     }
 }

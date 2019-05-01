@@ -8,50 +8,82 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    
-
-    <script	src="https://code.jquery.com/jquery-3.4.0.js"
-			  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-			  crossorigin="anonymous"></script>
-
 </head>
 <body>
 
     <div class="wrapper">
 
         <div class="nav nav-container">
-            <!-- MOBILE -->
-            <div class="mobile-nav nav__inner">
+            <div class="mobile-view">
                 <div class="logo">
                     <a href="#">LOGO</a>
                 </div>
-                <ul>
-                    <li><a href="#"><img class="menu-bar toggle-nav" src="img/menu.svg" alt=""></a></li>
-                </ul>
+                <div class="menu-icon">
+                    <a><img class="toggle-nav" src="img/menu.svg" alt=""></a>
+                </div>
+                <div class="dropdown-menu">
+                        <ul class="dropdown-menu__list">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">OUR COMMUNITY</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">PARKS</a></li>
+                        </ul>
+                </div>
             </div>
-
-
-            <!-- <div class="nav__inner">
-                <div class="logo">
-                    <a href="#">LOGO</a>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">OUR COMMUNITY</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">PARKS</a></li>
-                    </ul>
-                </div>
-            </div> -->
         </div>
 
+        <!-- HOME BANNER -->
+        <div class="home">
+            <img src="img/town.jpg" alt="town">
+            <div class="home__gradient"></div>
+            <div class="home__text">
+                <h1>An efficient Community</h1>
+            </div>
+        </div>
         
+        <!-- HOME FIRST ARTICLE -->
+        <section class="home-article__container">
+            <div class="home-article__inner">
+                <div class="home-article__text">
+                    <h2>Our People is our strength</h2>
+                    <p>We are a very proud community and trust us you will enjoy our town.</p>
+                </div>
+                <div class="home-article__button">
+                    <a class="btn" href="">
+                        <span>learn more</span>
+                        <span class="fill"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <!-- EVENTS -->
+        <div class="home-blog-events__wrapper">
+            <div class="home-blog__container">
+                <section class="home-blog__container">
+                    <div class="home-blog__item">
+                        <a href="" title="Spring is Here">
+                            <h3>Spring is Here</h3>
+                        </a>
+                        <span>Posted on: May 2, 2019</span>
+                        <p>Now that spring is here. Make sure you sign up for the spring cleaning event.</p>
+                    </div>
+                </section>
+                <section class="home-events__container">
+                    
+                </section>
+            </div>
+        </div>
         
 
 
     </div>
-    
 </body>
+
+<script
+			  src="https://code.jquery.com/jquery-3.4.0.min.js"
+			  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+			  crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
 </html>
