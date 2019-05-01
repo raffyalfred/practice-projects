@@ -454,3 +454,9 @@ a {
 ul {
   list-style: none;
 }
+
+body {
+  line-height: 1.5;
+  font-family: 'Raleway', sans-serif;
+}
+

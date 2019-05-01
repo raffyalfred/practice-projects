@@ -1,13 +1,13 @@
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #fff;
   position: absolute;
-  top: 90%;
+  top: 80%;
   left: 35%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .nav-container {
@@ -68,6 +68,50 @@ h1 {
   height: 50vh;
   min-height: 45vh;
   width: 100%;
+}
+
+.home-article__container {
+  background: -webkit-gradient(linear, left top, right top, from(#83c683), to(#40849b));
+  background: linear-gradient(to right, #83c683, #40849b);
+  padding: 1rem 1rem;
+}
+
+.home-article__inner {
+  padding: 4rem 0;
+}
+
+.home-article__text {
+  padding-bottom: 0.75rem;
+}
+
+.home-article__text h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding-bottom: 0.75rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.home-article__button {
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 10rem;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.home-article__button:hover {
+  background-color: #40849b;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.home-article__icon {
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 460px) {
