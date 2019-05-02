@@ -185,6 +185,28 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer__container {
+  background-color: #203e47;
+  padding: 1rem;
+}
+
+.footer__container h4 {
+  font-size: 1.25rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer__address {
+  color: #ccc;
+}
+
+.footer__phone {
+  color: #ccc;
+  margin-bottom: 1.75rem;
 }
 
 @media only screen and (min-width: 460px) {
@@ -208,6 +230,25 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .home__gradient {
+    height: 100%;
+  }
+  .home img {
+    height: 50rem;
+  }
+  h1 {
+    top: 90%;
+  }
+  .home-article__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .home-article__left {
+    width: 30rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

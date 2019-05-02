@@ -5,6 +5,8 @@ $h2-font-family: 'Roboto', sans-serif;
 $h3-font-size: 1.25rem;
 $h3-font-color: #000;
 $h3-font-family: 'Roboto', sans-serif;
+$h4-font-family: 'Roboto', sans-serif;
+$h4-font-size: 1.25rem;
 $nav-bg-color: #203e47;
 $home-bg-linear: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 70.84%);
 $home-article-linear: linear-gradient(to right, #83c683,#40849b);
@@ -150,6 +152,7 @@ h3 {
         margin: 0 auto;
         margin-top: 3rem;
     }
+
 }
 
 //////// HOME BLOG EVENTS ////////
@@ -202,7 +205,32 @@ h3 {
     &__card {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+}
 
+//////// FOOTER /////////
+
+.footer {
+    &__container {
+        background-color: #203e47;
+        padding: 1rem;
+    }
+
+    &__container h4 {
+        font-size: $h4-font-size;
+        font-family: $h4-font-family;
+        color: #fff;
+        margin-bottom: 1rem;
+    }
+
+    &__address {
+        color: #ccc;
+    }
+
+    &__phone {
+        color: #ccc;
+        margin-bottom: $margin-bottom-button;
     }
 }
 
@@ -230,4 +258,38 @@ h3 {
             justify-content: space-between;
         }
     }
+
+    // HOME BANNER //
+
+    .home {
+        &__gradient {
+            height: 100%;
+        }
+    }
+
+    .home img {
+        height: 50rem;   
+    }
+    
+    h1 {
+        top: 90%;
+    }
+
+    // HOME ARTICLE //
+
+
+    .home-article {
+        &__inner {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        &__left {
+            width: 30rem;
+        }
+    }
+
+
+
 }
